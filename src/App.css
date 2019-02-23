@@ -1,0 +1,117 @@
+.Login {
+  background-image: url("../src/assets/default.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+#header {
+  display: flex;
+  min-height: 15vh;
+  align-items: center;
+  justify-content: center;
+  font-style: oblique;
+  font-size: calc(8px + 1.5vmin);
+  color: lemonchiffon;
+}
+#Email {
+  display: flex;
+  min-height: 15vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#Password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Login_Forgot_Buttons {
+  display: flex;
+  min-height: 15vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#Register {
+  display: flex;
+  min-height: 1vh;
+  align-items: center;
+  justify-content: center;
+}
+.form-control {
+  background-color: whitesmoke;
+  opacity: 0.9;
+  min-height: 2vh;
+  width: 300px;
+}
+
+.Register {
+  background-image: url("../src/assets/default.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+}
+#Passwordss {
+  font-size: xx-small;
+  color: black;
+}
+#alreadyMember {
+  padding-top: 10px;
+}
+#ForgotPassword {
+  background-image: url("../src/assets/default.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  color: rgb(255, 255, 255);
+}
+#Emaila {
+  display: flex;
+  min-height: 15vh;
+  align-items: center;
+  justify-content: center;
+}
+#Forgot_Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+}
+#FP_header {
+  padding-left: 25%;
+  font-style: oblique;
+  font-size: calc(8px + 1.5vmin);
+}
+#headerMem {
+  font-style: oblique;
+  font-size: calc(8px + 1.5vmin);
+  color: lemonchiffon;
+  width: 11%;
+  background-color: black;
+}
+#ResetPassword {
+  background-image: url("../src/assets/default.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+}
+#Resetpwd {
+  padding-top: 10%;
+}
