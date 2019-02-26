@@ -51,12 +51,13 @@ export default class ResetPassword extends Component {
         openSnackBar: true,
         snackBarMessage: "Passwords doesn't match!"
       });
-    } else {
+    } else {      
       event.preventDefault();
       let current_url = window.location.pathname;
-      let verify_user_token = current_url.substr(19);
+      let verify_user_token = current_url.substr(15);
       console.log(verify_user_token);
       console.log("current ", current_url);
+
       resetPassword(this.state.Password, verify_user_token)
         .then(response => {
           console.log(response);
@@ -64,20 +65,18 @@ export default class ResetPassword extends Component {
             openSnackBar: true,
             snackBarMessage: "Password changed successfully"
           });
-          this.props.props.history.push("/");
+          this.props.history.push("/login");
         })
         .catch(err => {
           console.log(err);
+      console.log("Errrrrrrrrrrrrrrrrrr");
+          
           this.setState({
             openSnackBar: true,
             snackBarMessage: "Please Try Again.."
           });
         });
     }
-  };
-
-  resetForm = () => {
-    this.setState(this.baseState);
   };
 
   handleSnackClose = () => {

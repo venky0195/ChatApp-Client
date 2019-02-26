@@ -17,10 +17,16 @@ export default class Register extends Component {
       snackBarMessage: ""
     };
     this.baseState = this.state;
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleuserfirstNameChange = this.handleuserfirstNameChange.bind(this);
+    this.handleuserlastNameChange = this.handleuserlastNameChange.bind(this);
+    this.handlePasswordChange = this.handlePasswordChange.bind(this);
+    this.handleconfirmPasswordChange = this.handleconfirmPasswordChange.bind(this);
   }
+  
   loginClick = e => {
     e.preventDefault();
-    this.props.history.push("/");
+    this.props.history.push("/login");
   };
   resetForm = () => {
     this.setState(this.baseState);
@@ -100,11 +106,13 @@ export default class Register extends Component {
       });
     } else {
       var data = {
-        FirstName: this.state.firstName,
-        LastName: this.state.lastName,
+        firstName: this.state.firstName,
+        lastName: this.state.lastName,
         Email: this.state.Email,
         Password: this.state.Password
       };
+      console.log("register log===>",data);
+      
       userRegister(data)
         .then(response => {
           console.log(response);
@@ -112,13 +120,13 @@ export default class Register extends Component {
             openSnackBar: true,
             snackBarMessage: "Registration Successful!"
           });
-          this.props.props.history.push("/login");
+          this.props.history.push("/login");
         })
         .catch(err => {
           console.log(err);
           this.setState({
             openSnackBar: true,
-            snackBarMessage: "User with email id already exists!!"
+            snackBarMessage: "User with email address already exists!!"
           });
         });
     }

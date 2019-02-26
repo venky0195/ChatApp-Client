@@ -17,10 +17,10 @@ export default class Login extends Component {
     this.registrationclick = this.registrationclick.bind(this);
   }
 
-  onChange(e) {
+  onChange = e => {
     e.preventDefault();
     this.setState({ [e.target.name]: e.target.value });
-  }
+  };
   handleSnackClose = () => {
     this.setState({
       openSnackBar: false
@@ -63,7 +63,7 @@ export default class Login extends Component {
             snackBarMessage: "Login Successful!!"
           });
           localStorage.setItem("Sender", this.state.Username);
-          this.props.props.history.push("/dashBoard");
+          this.props.history.push("/dashboard");
         })
         .catch(err => {
           console.log(err);

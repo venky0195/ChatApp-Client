@@ -53,10 +53,10 @@ export default class ForgotPassword extends Component {
           <Inputs
             type={"email"}
             className={"form-control"}
-            id={this.state.Email}
+            id={this.state.userName}
             name={"Email"}
             placeholder={"Email"}
-            value={this.state.Email}
+            value={this.state.userName}
             onChange={this.handleuserNameChange}
           />
           <div id="Forgot_Button">
