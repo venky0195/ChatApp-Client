@@ -21,9 +21,11 @@ export default class Register extends Component {
     this.handleuserfirstNameChange = this.handleuserfirstNameChange.bind(this);
     this.handleuserlastNameChange = this.handleuserlastNameChange.bind(this);
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
-    this.handleconfirmPasswordChange = this.handleconfirmPasswordChange.bind(this);
+    this.handleconfirmPasswordChange = this.handleconfirmPasswordChange.bind(
+      this
+    );
   }
-  
+
   loginClick = e => {
     e.preventDefault();
     this.props.history.push("/login");
@@ -111,8 +113,8 @@ export default class Register extends Component {
         Email: this.state.Email,
         Password: this.state.Password
       };
-      console.log("register log===>",data);
-      
+      console.log("register log===>", data);
+
       userRegister(data)
         .then(response => {
           console.log(response);
@@ -142,17 +144,18 @@ export default class Register extends Component {
           <div id="Name">
             <Inputs
               type={"text"}
-              className={"form-control"}
+              className={"noControl"}
               id={this.state.firstName}
               name={"firstName"}
               placeholder={"First Name"}
               value={this.state.firstName}
               onChange={this.handleuserfirstNameChange}
             />
-            {"    "}
+          </div>
+          <div id="Name">
             <Inputs
               type={"text"}
-              className={"form-control"}
+              className={"noControl"}
               id={this.state.lastName}
               name={"lastName"}
               placeholder={"Last Name"}
@@ -163,7 +166,7 @@ export default class Register extends Component {
           <div id="Email">
             <Inputs
               type={"email"}
-              className={"form-control"}
+              className={"noControl"}
               id={this.state.Email}
               name={"Email"}
               placeholder={"Email"}
@@ -174,17 +177,18 @@ export default class Register extends Component {
           <div id="Passwordss">
             <Inputs
               type={"password"}
-              className={"form-control"}
+              className={"noControl"}
               id={this.state.Password}
               name={"Password"}
               placeholder={"Password"}
               value={this.state.Password}
               onChange={this.handlePasswordChange}
             />
-            {"-"}
+          </div>
+          <div id="Passwordss">
             <Inputs
               type={"password"}
-              className={"form-control"}
+              className={"noControl"}
               id={this.state.confirmPassword}
               name={"confirmPassword"}
               placeholder={"Confirm Password"}
@@ -199,13 +203,9 @@ export default class Register extends Component {
               title={"Submit"}
               onClick={this.handleSubmit}
             />
-            {"   "}
-            <Buttons
-              label={"Reset"}
-              color={"link"}
-              title={"Reset"}
-              onClick={this.resetForm}
-            />
+          </div>
+          <div id="Login_Forgot_Buttons">
+            <Buttons label={"Reset"} title={"Reset"} onClick={this.resetForm} />
           </div>
           <div id="headerMem">Already Member? </div>
           <div id="alreadyMember">

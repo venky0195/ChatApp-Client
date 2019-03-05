@@ -93,7 +93,7 @@ export default class Login extends Component {
           <div id="Email">
             <Inputs
               type={"email"}
-              className={"form-control"}
+              className={"noControl"}
               id={this.state.Username}
               name={"Username"}
               placeholder={"Username"}
@@ -104,7 +104,7 @@ export default class Login extends Component {
           <div id="Password">
             <Inputs
               type={"password"}
-              className={"form-control"}
+              className={"noControl"}
               id={this.state.Password}
               name={"Password"}
               placeholder={"Password"}

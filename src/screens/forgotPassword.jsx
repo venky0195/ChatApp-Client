@@ -52,7 +52,7 @@ export default class ForgotPassword extends Component {
 
           <Inputs
             type={"email"}
-            className={"form-control"}
+            className={"noControl"}
             id={this.state.userName}
             name={"Email"}
             placeholder={"Email"}

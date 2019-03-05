@@ -51,7 +51,7 @@ export default class ResetPassword extends Component {
         openSnackBar: true,
         snackBarMessage: "Passwords doesn't match!"
       });
-    } else {      
+    } else {
       event.preventDefault();
       let current_url = window.location.pathname;
       let verify_user_token = current_url.substr(15);
@@ -69,8 +69,8 @@ export default class ResetPassword extends Component {
         })
         .catch(err => {
           console.log(err);
-      console.log("Errrrrrrrrrrrrrrrrrr");
-          
+          console.log("Errrrrrrrrrrrrrrrrrr");
+
           this.setState({
             openSnackBar: true,
             snackBarMessage: "Please Try Again.."
@@ -91,7 +91,7 @@ export default class ResetPassword extends Component {
           <div id="Resetpwd">
             <Inputs
               type={"password"}
-              className={"form-control"}
+              className={"noControl"}
               id={this.state.Password}
               name={"Password"}
               placeholder={"New Password"}
@@ -101,7 +101,7 @@ export default class ResetPassword extends Component {
             {"  "}
             <Inputs
               type={"password"}
-              className={"form-control"}
+              className={"noControl"}
               id={this.state.newPassword}
               name={"confirmPassword"}
               placeholder={"Confirm Password"}

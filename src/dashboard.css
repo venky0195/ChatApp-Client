@@ -1,0 +1,138 @@
+body {
+  background-image: url("../src/assets/watsapp.png");
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dashboard {
+  background-image: url("../src/assets/whatsapp.jpg");
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sidebar {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  top: 26px;
+}
+.openButton {
+  width: 14%;
+  padding-top: 0.5%;
+}
+
+#buttonalter {
+  color: rgb(221, 199, 172);
+  margin-left: 90%;
+  margin-top: -175px;
+  border-color: currentColor;
+}
+#heading {
+  text-align: center;
+  width: 100%;
+  color: bisque;
+  font-weight: bolder;
+}
+.onlineUsers {
+  padding-top: 5%;
+}
+#chatscreen {
+  height: 400px;
+  width: 900px;
+  position: relative;
+  top: -10px;
+  right: 23px;
+  left: 161px;
+  border: 2px solid rgb(45, 11, 238);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-image: url("../src/assets/watsapp.png");
+}
+#loggedInAs {
+  padding: 20px 160px;
+  color: aliceblue;
+}
+.containerButton {
+  margin-top: -1%;
+  margin-left: 15%;
+  margin-right: 0%;
+  width: 200%;
+  display: flex;
+  margin: normal;
+  text-decoration-color: black;
+}
+input[type="textfield"] {
+  width: 305px;
+  height: 18%;
+  padding: 22px 200px;
+  background-color: rgb(218, 212, 203);
+}
+input[type="submit"] {
+  width: 200px;
+  height: 90%;
+  padding: 50px 200px;
+}
+#send {
+  margin-top: -6.5%;
+  margin-left: 70%;
+  padding: 18px 23px;
+}
+
+.box1 {
+  width: 420px;
+  margin: 20px auto;
+  background: #dcf8c6;
+  padding: 7px;
+  text-align: right;
+  color: black;
+  font-family: arial;
+  position: relative;
+  left: 23%;
+}
+.box2 {
+  width: 420px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 7px;
+  text-align: left;
+  color: black;
+  font-family: arial;
+  position: relative;
+  right: 23%;
+}
+
+.sb1:before {
+  content: "";
+  position: absolute;
+  border-left: 10px solid #dcf8c6;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #dcf8c6;
+  border-bottom: 10px solid transparent;
+  right: -19px;
+  top: 6px;
+}
+
+.sb2:before {
+  content: "";
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #ffff;
+  border-top: 10px solid #ffff;
+  border-bottom: 10px solid transparent;
+  left: -19px;
+  top: 6px;
+}
+.chatHeader {
+  background-color: grey;
+  color: aliceblue;
+  padding: 1%;
+}
+.chatHeader1 {
+  background-color: #128c7e;
+  color: aliceblue;
+  width: 900px;
+  position: relative;
+  top: -10px;
+  right: 23px;
+  left: 161px;
+}
