@@ -1,3 +1,10 @@
+/******************************************************************************
+ *  @Purpose        : We import all the pages and components by using specific path and route them
+ *  @file           : App.js        
+ *  @author         : Venkatesh G
+ *  @version        : v0.1
+ *  @since          : 05-03-2019
+ ******************************************************************************/
 import React, { Component } from "react";
 import Login from "./screens/login";
 import Register from "../src/screens/register";

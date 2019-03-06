@@ -1,3 +1,6 @@
+/**
+ *@description: Re-useable input component
+ */
 import React, { Component } from "react";
 import { TextField } from "@material-ui/core";
 import "../App.css";

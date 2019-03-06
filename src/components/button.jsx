@@ -1,3 +1,6 @@
+/**
+ *@description: Re-useable button component
+ */
 import React, { Component } from "react";
 import "../App.css";
 import { Button } from "@material-ui/core";
